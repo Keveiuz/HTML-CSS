@@ -1,0 +1,229 @@
+body {
+    background-color: rgba(1, 1, 1, 0.95);
+    font-family: monospace;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 2em;
+}
+
+.box1 {
+    background-color: rgba(0, 88, 59, 0.2);
+    color: rgb(166, 170, 116);
+}
+
+.box1 h1 {
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 800;
+    font-style: italic;
+
+    text-align: center;
+
+    text-decoration: solid;
+
+    border-left: yellow 10px ridge;
+    border-right: red 10px ridge;
+    border-top: green 10px ridge;
+    border-bottom: blue 10px ridge;
+    /* border-style: ridge, unset, inherit, initial, inset, outset, solid, dashed, dotted, double, groove, hidden, none; */
+
+    padding: 0.5em;
+}
+
+
+.box2 {
+    background-color: rgba(87, 35, 0, 0.795);
+    color: #fdad62;
+    letter-spacing: 0em;
+    word-spacing: 1em;
+
+    text-align: center;
+    
+    padding: 1em;
+
+    border: lightsalmon 3px solid;
+    border-radius: 1em;
+
+    margin: 50px 0px;
+}
+
+.box2 button {
+    background-color: #47cf73;
+    
+    color: black;
+    font-size: 20px;
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 800;
+
+    text-shadow: none;
+
+    padding: 1em;
+    border-radius: 8px;
+    
+}
+.box2 button:hover {
+    background-color: black;
+    color: rgb(48, 170, 95);
+}
+.box2 button:active {
+    background-color: rgb(233, 94, 136);
+    color: black;
+}
+
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+.list li {
+    background-color: rgb(44, 60, 77);
+    color: paleturquoise;
+
+    list-style: square;
+    list-style-image: url('../image/check.png');
+} 
+
+
+.box3 {
+    background-color: rgba(87, 35, 0, 0.795);
+    color: #fdad62;
+    letter-spacing: 0em;
+    word-spacing: 1em;
+
+    text-align: center;
+    
+    padding: 1em;
+
+    border: lightsalmon 3px solid;
+    border-radius: 1em;
+
+    margin: 50px 0px;
+}
+.box3 button {
+    background-color: gold;
+    
+    color: black;
+    font-size: 20px;
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 800;
+
+    border-radius: 8px;
+}
+.box3 button:hover {
+    background-color: black;
+    color: gold;
+}
+
+.box3 button:active {
+    background-color: rgb(255, 217, 0); 
+    color: black;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    background-color: gold;
+}
+a:hover {
+    color: gold;
+    background-color: black;
+}
+a:active {
+    color: whitesmoke;
+    background-color: rgb(233, 94, 136);
+}
+/* a:visited {
+    color: whitesmoke;
+    background-color: rgb(233, 94, 136);
+} */
+
+.block {
+    background-color: rgb(44, 48, 58);
+    color: rgb(199, 201, 211);
+    font-family: 'Lato', 'Lucida Grande', 'Lucida Sans Unicode', Tahoma, Sans-Serif;
+
+    border-radius: 10px;
+    padding: 1em;
+    margin: 1em;
+}
+.block h2 {
+    color: rgb(255, 255, 255);
+    font-family: Telefon, sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+strong {
+    color: rgb(118, 218, 255)
+}
+strong:hover {
+    color: rgb(199, 201, 211);
+}
+
+.block1 {
+    background-color: rgb(44, 48, 58);
+    color: rgb(199, 201, 211);
+    font-family: 'Lato', 'Lucida Grande', 'Lucida Sans Unicode', Tahoma, Sans-Serif;
+
+    border-radius: 10px;
+    border: 1px;
+    padding: 1em;
+    margin: 3px;
+
+    float: left;
+    width: 31%;
+    box-sizing: border-box;
+}
+.block1 h2 {
+    color: rgb(255, 255, 255);
+    font-family: Telefon, sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+#main-block {
+    background-color: rgb(44, 48, 58);
+    color: rgb(199, 201, 211);
+    font-family: 'Lato', 'Lucida Grande', 'Lucida Sans Unicode', Tahoma, Sans-Serif;
+
+    border-radius: 10px;
+    border: 1px;
+    padding: 1em;
+
+    float: left;
+    width: 70%;
+    box-sizing: border-box;
+}
+
+#side-bar {
+    background-color: rgb(44, 48, 58);
+    color: rgb(199, 201, 211);
+    font-family: 'Lato', 'Lucida Grande', 'Lucida Sans Unicode', Tahoma, Sans-Serif;
+
+    border-radius: 10px;
+    border: 1px;
+    padding: 1em;
+
+    float: right;
+    width: 30%;
+    box-sizing: border-box;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.position-box {
+    width: 500px;
+    height: 500px;
+
+    border: 2px solid wheat;
+}
+
+#fixed {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+}
