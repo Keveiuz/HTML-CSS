@@ -1,0 +1,164 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.box {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/***********__First__***********/
+.First {
+    height: 400px;
+}
+
+.A {
+    position: absolute; 
+
+    width: 300px;
+    height: 300px;
+
+    color: #fce5b7;
+    background-color: #a02c3e;
+    font-size: 30px;
+
+    text-align: center;
+    line-height: 40px;
+}
+
+.A p {
+    padding: 40px 10px;
+    margin: 50px auto;
+}
+
+.B {
+    position: absolute; 
+    left: calc(10% + 350px);
+
+    width: 300px;
+    height: 300px;
+
+    color: #fce5b7;
+    background-color: #a02c3e;
+    font-size: 30px;
+
+    text-align: center;
+    line-height: 40px;
+}
+
+.B p {
+    padding: 40px 10px;
+    margin: 50px auto;
+}
+
+.C {
+    position: absolute; 
+    left: calc(10% + 700px);
+
+    width: 300px;
+    height: 300px;
+
+    color: #fce5b7;
+    background-color: #a02c3e;
+    font-size: 30px;
+
+    text-align: center;
+    line-height: 30px;
+}
+
+.C p {
+    padding: 35px 10px;
+    margin: 100px auto;
+}
+
+/**********__Second__**********/
+.Second {
+    height: 400px;
+}
+.out {
+    position: relative;
+
+    width: 300px;
+    height: 300px;
+
+    color: #fce5b7;
+    background-color: #a02c3e;
+    font-size: 20px;
+
+    text-align: center;
+    line-height: 25px;
+}
+.out > p {
+    position: absolute;
+    left: calc(50% - 90px);
+}
+
+.in {
+    position: relative;
+    top: 50px;
+    left: 50px;
+
+    width: 180px;
+    height: 180px;
+    padding: 10px;
+    margin: 0;
+
+    color: #fce5b7;
+    background-color: #8a1527;
+}
+
+/**********__Third__*********/
+.Third {
+    height: 400px;
+}
+.block {
+    position: relative; 
+
+    width: 300px;
+    height: 300px;
+
+    color: #fce5b7;
+    background-color: #a02c3e;
+    font-size: 25px;
+
+    text-align: center;
+    line-height: 40px;
+}
+
+.block > p {
+    position: absolute;
+    top: 15%;
+    left: 10%;
+
+    width: 80%;
+    /* 禁用 margin */
+    margin: 0 auto;
+}
+
+/**********__Fourth__************/
+.Fourth {
+    height: 400px;
+}
+
+.Fourth .hider {
+    float: left;
+
+    width: 70px;
+    height: 70px;
+    margin-top: 30px;
+    margin-left: 30px;
+    background-color: #fce5b7;
+}
+.Fourth .para {
+    width: 260px;
+    height: 260px;
+    padding: 20px;
+
+    color: #fce5b7;
+    background-color: #a02c3e;
+    font-size: 25px;
+
+    text-align: center;
+    line-height: 40px;
+}

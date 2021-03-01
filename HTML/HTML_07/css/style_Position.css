@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #34332e;
+}
+
+.nav {
+    z-index: 1;
+    position: sticky;
+    top: 0;
+
+    width: 100%;
+    height: 100px;
+    margin: 30px auto;
+    margin-bottom: 0;
+    background-color: #1a1a1a;
+
+    color: #2bfbc7;
+    text-align: center;
+    font-size: 70px;
+    line-height: 100px;
+}
+
+.block_0 {
+    float: left;
+    position: sticky;
+    top: 50px;
+
+    width: 50px;
+    height: 50px;
+    margin-top: 50px;
+    background-color: transparent;
+}
+
+/*********__box_1__*********/
+.box_1 {
+    position: relative;
+    right: -50px;
+
+    width: 85%;
+    margin: 0 auto;
+    overflow: scroll;
+}
+
+.box_1 .block_1 {
+    float: left;
+    position: sticky;
+    top: 50px;
+
+    width: 50px;
+    height: 50px;
+    margin-top: 50px;
+    background-color: #ff7286;
+}
+
+.box_1 .container {
+    position: relative;
+    float: left;
+
+    width: 300px;
+    height: 400px;
+    margin: 50px 30px;
+    background-color: rgb(26, 26, 26);
+}
+.box_1 .container .pic {
+    position: relative;
+    top: 10px;
+
+    width: 300px;
+    height: 200px;
+    background-image: url("../Background/Background_Ellipse.png");
+    background-size: cover;
+}
+.box_1 .container .info {
+    width: 250px;
+    height: 160px;
+    padding: 20px 25px;
+
+    color: #ff7286;
+    font-size: 25px;
+    text-align: center;
+}
+.box_1 .container .attachment {
+    position: absolute;
+    top: 15px;
+    right: -19px;
+
+    width: 100px;
+    height: 50px;
+    background-image: url("../icons/attachment_NEW.png");
+    background-size: cover;
+}
+
+
+/**********__box_2__**********/
+.box_2 {
+    position: relative;
+    right: -50px;
+
+    width: 85%;
+    margin: 0 auto;
+    overflow: scroll;
+}
+
+.box_2 .block_2 {
+    float: left;
+    position: sticky;
+    top: 50px;
+
+    width: 50px;
+    height: 50px;
+    margin-top: 50px;
+    background-color: #5de2fc;
+}
+
+.box_2 .container {
+    position: relative;
+    float: left;
+
+    width: 300px;
+    height: 400px;
+    margin: 50px 30px;
+    background-color: rgb(26, 26, 26);
+}
+.box_2 .container .pic {
+    position: relative;
+    top: 10px;
+
+    width: 300px;
+    height: 200px;
+    background-image: url("../Background/Background_Triangle.png");
+    background-size: cover;
+}
+.box_2 .container .info {
+    width: 250px;
+    height: 160px;
+    padding: 20px 25px;
+
+    color: #5de2fc;
+    font-size: 25px;
+    text-align: center;
+}
+.box_2 .container .attachment {
+    position: absolute;
+    top: 270px;
+    right: -34px;
+
+    width: 375px;
+    height: 100px;
+    background-image: url("../icons/attachment_Cheers!!.png");
+    background-size: cover;
+}
+
+
+/**********__sidebar__**********/
+.sidebar {
+    position: fixed;
+    top: calc(20% + 20px);
+    left: 0px;
+}
+.sidebar a:nth-child(odd) {
+    display: block;
+
+    height: 60px;
+    width: 150px;
+    background-color: rgb(26, 26, 26);
+    color: #5de2fc;
+
+    font-size: 25px;
+    text-align: center;
+    text-decoration: none;
+    line-height: 60px;
+}
+.sidebar a:nth-child(even) {
+    display: block;
+
+    height: 60px;
+    width: 150px;
+    background-color: rgb(26, 26, 26);
+    color: #ff7286;
+
+    font-size: 25px;
+    text-align: center;
+    text-decoration: none;
+    line-height: 60px;
+}
+.sidebar a:nth-child(odd):hover {
+    background-color: #5de2fc;
+    color: #1a1a1a;
+}
+.sidebar a:nth-child(even):hover {
+    background-color: #ff7286;
+    color: #1a1a1a;
+}
+/*Lorem ipsum dolor, sit amet adipisicing elit.  blanditiis repellat ipsa a nostrum ad fugit eaque, reprehenderit delectus  alias, ut fugiat harum quos quia minus fuga numquam ratione?
+*/

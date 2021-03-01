@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ß Tips</title>
+    <link rel="stylesheet" href="./css/style_Tips.css">
+</head>
+
+<body>
+    <div class="box">
+        <div class="First">
+            <h1>Tips 1.</h1>
+            <span class="A">
+                <p>Position属性会将inline-element自动改为inline-block</p>
+            </span>
+            <span class="B">
+                <p>可以直接设置height, width. 不占用位置。</p>
+            </span>
+            <span class="C">
+                <p>INLINE-ELEMENT</p>
+            </span>
+        </div>
+    
+        <div class="Second">
+            <h1>Tips 2.</h1>
+            <div class="out">
+                <p>父元素有position属性</p>
+                <div class="in">
+                    <p>
+                        子元素的绝对定位以父元素范围为基准, 若父元素没有position属性, 则继续向上一级寻找。若都没有, 则以网页为基准偏移
+                    </p>
+                </div>
+            </div>
+        </div>
+    
+        <div class="Third">
+            <h1>Tips 3.</h1>
+            <div class="block">
+                <p>使用position 属性会禁用 margin, padding 等常规位置属性。使用 calc(N% + Mpx) 函数可实现精确定位。</p>
+            </div>
+        </div>
+    
+        <div class="Fourth">
+            <h1>Tips 4.</h1>
+            <div class="hider"></div>
+            <div class="para">
+                浮动元素不会遮挡下方文字和图片, 因为浮动产生的最初目的就是完成文字环绕的效果
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

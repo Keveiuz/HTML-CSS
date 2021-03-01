@@ -1,0 +1,330 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    
+}
+
+span {
+    /* float: left; */
+    display: inline-block;
+    background: url("../Background/IMG_1414.JPG") no-repeat transparent;
+}
+
+.A_b {
+    width: 80px;
+    height: 100px;
+    background-position: -30px -140px;
+}
+.B_b {
+    width: 80px;
+    height: 100px;
+    background-position: -125px -140px;
+}
+.C_b {
+    width: 80px;
+    height: 100px;
+    background-position: -220px -140px;
+}
+.D_b {
+    width: 80px;
+    height: 100px;
+    background-position: -315px -140px;
+}
+.E_b {
+    width: 70px;
+    height: 100px;
+    background-position: -410px -140px;
+}
+.F_b {
+    width: 70px;
+    height: 100px;
+    background-position: -30px -248px;
+}
+.G_b {
+    width: 100px;
+    height: 100px;
+    background-position: -100px -248px;
+}
+.H_b {
+    width: 90px;
+    height: 100px;
+    background-position: -207px -248px;
+}
+.I_b {
+    width: 50px;
+    height: 100px;
+    background-position: -300px -248px;
+}
+.J_b {
+    width: 50px;
+    height: 100px;
+    background-position: -350px -250px;
+}
+.K_b {
+    width: 90px;
+    height: 100px;
+    background-position: -400px -248px;
+}
+.L_b {
+    width: 60px;
+    height: 100px;
+    background-position: -30px -355px;
+}
+.M_b {
+    width: 110px;
+    height: 100px;
+    background-position: -90px -355px;
+}
+.N_b {
+    width: 100px;
+    height: 100px;
+    background-position: -202px -355px;
+}
+.O_b {
+    width: 100px;
+    height: 100px;
+    background-position: -307px -355px;
+}
+.P_b {
+    width: 70px;
+    height: 100px;
+    background-position: -412px -355px;
+}
+.Q_b {
+    width: 100px;
+    height: 100px;
+    background-position: -34px -462px;
+}
+.R_b {
+    width: 75px;
+    height: 100px;
+    background-position: -145px -462px;
+}
+.S_b {
+    width: 75px;
+    height: 100px;
+    background-position: -230px -462px;
+}
+.T_b {
+    width: 75px;
+    height: 100px;
+    background-position: -313px -462px;
+}
+.U_b {
+    width: 75px;
+    height: 100px;
+    background-position: -401px -462px;
+}
+.V_b {
+    width: 75px;
+    height: 100px;
+    background-position: -32px -570px;
+}
+.W_b {
+    width: 120px;
+    height: 100px;
+    background-position: -115px -570px;
+}
+.X_b {
+    width: 70px;
+    height: 100px;
+    background-position: -244px -570px;
+}
+.Y_b {
+    width: 70px;
+    height: 100px;
+    background-position: -323px -570px;
+}
+.Z_b {
+    width: 70px;
+    height: 100px;
+    background-position: -406px -570px;
+}
+
+/*********************************************/
+
+.A_w {
+    width: 80px;
+    height: 100px;
+    background-position: -544px -140px;
+}
+.B_w {
+    width: 80px;
+    height: 100px;
+    background-position: -636px -140px;
+}
+.C_w {
+    width: 80px;
+    height: 100px;
+    background-position: -730px -140px;
+}
+.D_w {
+    width: 80px;
+    height: 100px;
+    background-position: -827px -140px;
+}
+.E_w {
+    width: 70px;
+    height: 100px;
+    background-position: -923px -140px;
+}
+.F_w {
+    width: 70px;
+    height: 100px;
+    background-position: -542px -248px;
+}
+.G_w {
+    width: 100px;
+    height: 100px;
+    background-position: -613px -248px;
+}
+.H_w {
+    width: 90px;
+    height: 100px;
+    background-position: -719px -248px;
+}
+.I_w {
+    width: 50px;
+    height: 100px;
+    background-position: -812px -248px;
+}
+.J_w {
+    width: 50px;
+    height: 100px;
+    background-position: -863px -250px;
+}
+.K_w {
+    width: 90px;
+    height: 100px;
+    background-position: -920px -248px;
+}
+.L_w {
+    width: 60px;
+    height: 100px;
+    background-position: -542px -355px;
+}
+.M_w {
+    width: 110px;
+    height: 100px;
+    background-position: -602px -355px;
+}
+.N_w {
+    width: 100px;
+    height: 100px;
+    background-position: -714px -355px;
+}
+.O_w {
+    width: 100px;
+    height: 100px;
+    background-position: -820px -355px;
+}
+.P_w {
+    width: 70px;
+    height: 100px;
+    background-position: -925px -355px;
+}
+.Q_w {
+    width: 100px;
+    height: 100px;
+    background-position: -540px -462px;
+}
+.R_w {
+    width: 75px;
+    height: 100px;
+    background-position: -655px -462px;
+}
+.S_w {
+    width: 75px;
+    height: 100px;
+    background-position: -740px -462px;
+}
+.T_w {
+    width: 75px;
+    height: 100px;
+    background-position: -824px -462px;
+}
+.U_w {
+    width: 75px;
+    height: 100px;
+    background-position: -913px -462px;
+}
+.V_w {
+    width: 75px;
+    height: 100px;
+    background-position: -545px -570px;
+}
+.W_w {
+    width: 120px;
+    height: 100px;
+    background-position: -628px -570px;
+}
+.X_w {
+    width: 70px;
+    height: 100px;
+    background-position: -757px -570px;
+}
+.Y_w {
+    width: 70px;
+    height: 100px;
+    background-position: -835px -570px;
+}
+.Z_w {
+    width: 70px;
+    height: 100px;
+    background-position: -917px -570px;
+}
+
+
+.__b {
+    border-top: 50px black solid;
+    border-bottom: 50px black solid;
+    border-left: 25px black solid;
+    border-right: 25px black solid;
+}
+.__w {
+    border-top: 50px white solid;
+    border-bottom: 50px white solid;
+    border-left: 25px white solid;
+    border-right: 25px white solid;
+}
+.__y {
+    border-top: 50px yellow solid;
+    border-bottom: 50px yellow solid;
+    border-left: 25px yellow solid;
+    border-right: 25px yellow solid;
+}
+.__g {
+    border-top: 50px #d4d4d4 solid;
+    border-bottom: 50px #d4d4d4 solid;
+    border-left: 25px #d4d4d4 solid;
+    border-right: 25px #d4d4d4 solid;
+}
+
+.b {
+    background-color: #000000;
+    justify-content: center;
+    padding: 0px 50px;
+}
+.w {
+    background-color: #ffffff;
+    justify-content: center;
+    padding: 0px 50px;
+}
+.g {
+    background-color: #d4d4d4;
+    justify-content: center;
+    padding: 0px 50px; 
+}
+.d {
+    background-color: #517178;
+    justify-content: center;
+    padding: 0px 50px; 
+}
+.r {
+    background-color: #785151;
+    justify-content: center;
+    padding: 0px 50px;
+}
