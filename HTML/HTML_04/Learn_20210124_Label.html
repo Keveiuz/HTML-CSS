@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Label</title>
+</head>
+
+<body>
+    <h2>Label</h2>
+    <p>I. Advanced: The box and button with label have higher chance to be checked </p>
+    <p>II. Mechanism: the icon will be checked not only by clicking the box but also by clicking the co-responding literal illustrations.</p>
+    <p>III. Tips : label 'for' property must match input 'id' property</p>
+
+    <h3>e.g.</h3>
+    <p>1. Icon with Label</p>
+    <form action="xxx.php">
+        Personality: <input type="checkbox" name="Personality" value="Outgoing" id="Outgoing"> <label
+        for="Outgoing">Outgoing </label><input type="checkbox" name="Personality" value="Easygoing"
+        id="Easygoing"><label for="Easygoing">Easygoing</label> <input type="checkbox" name="Personality" value="Quiet" id="Quiet"><label for="Quiet">Quiet</label> <input type="checkbox" name="Personality" value="Warmhearted" id="Warmhearted"><label for="Warmhearted">Warmhearted</label>
+    </form>
+
+    <p>2. Icon without Label</p>
+    <form action="xxx.php">
+        Personality: <input type="checkbox" name="Personality" value="Outgoing"> Outgoing <input type="checkbox" name="Personality" value="Easygoing"> Easygoing <input type="checkbox" name="Personality" value="Quiet"> Quiet <input type="checkbox" name="Personality" value="Warmhearted"> Warmhearted
+    </form>     
+    
+    <p>1. Icon with Label</p>
+    <form action="">
+        <label for="password">Password: </label><input type="password" id="password">
+    </form>
+
+    <p>2. Icon without Label</p>
+    <form action="">
+        Password: <input type="password">
+    </form>
+
+    <!-- Tips : label 'for' property must match input 'id' property -->
+</body>
+
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Application</title>
+</head>
+<body>
+    <form action="XXX.php" method="GET">
+        <table border="1px">
+
+            <tr>
+                <th colspan="2">University Application</th>
+            </tr>
+    
+            <tr>
+                <th>Name:</th>
+                <td><input type="text" placeholder="Last/First Name"></td>
+            </tr>
+    
+            <tr>
+                <th>Gender:</th>
+                <td><input type="radio" name="Gender" value="Male"> Male &nbsp; <input type="radio" name="Gender" value="Female"> Female </td>
+            </tr>
+    
+            <tr>
+                <th>Birthday: </th>
+                <td>
+                    <select name="Year">
+                        <option>__Year__</option>
+                        <option>1990</option>
+                        <option>1995</option>
+                        <option>2000</option>
+                        <option>2005</option>
+                        <option>2010</option>
+                        <option>2015</option>
+                    </select>
+                    &nbsp;
+                    <select name="Month" aria-placeholder="Month">
+                        <option>__Month__</option>
+                        <option> 1</option>
+                        <option> 2</option>
+                        <option> 3</option>
+                        <option> 4</option>
+                        <option> 5</option>
+                        <option> 6</option>
+                        <option> 7</option>
+                        <option> 8</option>
+                        <option> 9</option>
+                        <option>10</option>
+                        <option>11</option>
+                        <option>12</option>
+                    </select>
+                </td>
+            </tr>
+    
+            <tr>
+                <th>Nation:</th>
+                <td>
+                    <select>
+                        <option value="1">Australia</option>
+                        <option value="2">Brazil</option>
+                        <option value="3">Canada</option>
+                        <option value="4">China</option>
+                        <option value="5">Dominica</option>
+                        <option value="6">Egypt</option>
+                        <option value="7">France</option>
+                        <option value="8">Germany</option>
+                        <option value="9">Greece</option>
+                        <option value="10">Huwaii</option>
+                        <option value="11">Italy</option>
+                        <option value="12">Japan</option>
+                        <option value="13">Kenya</option>
+                        <option value="14">Libya</option>
+                        <option value="15">Mexico</option>
+                        <option value="16">Norway</option>
+                        <option value="17">Poland</option>
+                        <option value="18">Russia</option>
+                        <option value="19">Spain</option>
+                        <option value="20">Switzerlanad</option>
+                    </select>
+                </td>
+            </tr>
+    
+            <tr>
+                <th>Orientation: </th>
+                <td>
+                   <input type="checkbox" value="Science"> Science <br>
+                   <input type="checkbox" value="Literature"> Literature <br>
+                   <input type="checkbox" value="Art"> Art <br>
+                   <input type="checkbox" value="Others"> Others <br>
+                </td>
+            </tr>
+    
+            <tr>
+                <th>Award: </th>
+                <td>
+                    <textarea placeholder="No.1 Y.M.D : XXX_Award" cols="25"></textarea>
+                </td>
+            </tr>
+    
+            <tr>
+                <td><input type="reset" name="Reset"></td>
+                <td><input type="submit" name="Submit"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

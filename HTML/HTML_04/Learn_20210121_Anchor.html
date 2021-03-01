@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anchor</title>
+</head>
+
+<body>
+    <h1>Anchor: 超链接_Hyperlink</h1>
+    <h2>1. Outer_Link 外部链接</h2>
+    <p>(1) a.href 要求以 'http://' 开头</p>
+    <a href="http://www.bing.com" target="_self">Bing (Target = Self)</a>
+    <p>(2) a.target 控制网页打开方式（在当前页打开或在新窗口打开</p> 
+    <a href="http://www.bing.com" target="_blank">Bing (Target = Blank)</a>
+
+    <h2>2. Inner_Link 内部链接</h2>
+    <p>作为导航栏或中继器整合不同网页</p>
+    <a href="./Learn_20210120_Box.html" target="_blank"> 1. Box</a><br>
+    <a href="./Learn_20210120_Image.html" target="_blank"> 2. Image</a><br>
+    <a href="./Learn_20210120_TextFormat.html" target="_blank"> 3. TextFormat</a><br>
+
+    <h2>3. Empty_Link 空链接</h2>
+    <p>用 '#' 表示空 (Hashtag)</p>
+    <a href="#">This Anchor is empty</a>
+
+    <h2>4. Download_Link 下载链接</h2>
+    <p>当超链接链接的是 .exe 或 .zip 文件时，打开链接会下载文件</p>
+    <a href="./img/Lantern.zip">This is an image link</a>
+
+    <h2>5. Anchor_Link 锚点链接</h2>
+    <p>使用 '#' 访问id可以实现将页面定位到id对应子块所在的位置</p>
+    <a href="../HTML_05/Addtion_20210121_Hashtag.html" target="_blank" >Cilck here to see the Demonstration</a>
+
+</body>
+
+</html>

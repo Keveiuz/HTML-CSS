@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input</title>
+</head>
+
+<body>
+    <div class="Form">
+        <h1>Input</h1>
+        <form action="xxx.php" method="GET"> <!-- Back-end Server -->
+            <!-- Form Domain -->
+            <h2>* Property *</h2>
+            <p>name: Define input-data category</p>
+            <p>value: Once selected, The value will be transmitted to the database.</p>
+            <h2>1. Text </h2>
+            <p>Any data typy in textbox will be shown on the screen.</p>
+            Users: <input type="text">
+            <br>
+
+            <h2>2. Password</h2>
+            <p>Data in password box will be displayed in Dot</p>
+            Password: <input type="password">
+            <br>
+
+            <h2>3. Radio</h2>
+            <p>This type of input give Users multiple choice to choose, but only be able to choose one.(Single choice button)</p>
+            <p><em>Warning: Only with the same property 'name' can radios select out only one choice </em></p>
+            <p><strong>Property: Once chosen, the choice cannot be cancelled (Default setting)</strong></p>
+            Gender: <input type="radio" name="Gender" value="Male">Male &nbsp; <input type="radio" name="Gender" value="Female">Female
+            <br>
+
+            <h2>4. CheckBox</h2>
+            <p>This type of input give Users multiple choice to choose, and more than one choice can be chosen.(Multiple choice box)</p>
+            <p><strong>Property: When chosen, the choice is able to be cancelled (Default setting)</strong></p>
+            Personality: <input type="checkbox" name="Personality" value="Outgoing"> Outgoing <input type="checkbox" name="Personality" value="Easygoing"> Easygoing <input type="checkbox" name="Personality" value="Quiet"> Quiet <input type="checkbox" name="Personality" value="Warmhearted"> Warmhearted
+            <br>
+            <h3><em>Property: checked</em></h3>
+            <p><em>This property will automatically click the box as a default setting.</em></p>
+            <input type="checkbox" checked> I have read and agree the pravicy policy.
+            <br>
+
+            <h2>5. Submit</h2>
+            <p>Cilck to transmit the data in form domain to back-end sever</p>
+            <input type="submit" value="Submit">
+            <br>
+
+            <h2>6. Reset</h2>
+            <p>Cilck to clear all the data that have been typed in</p>
+            <input type="reset" value="Reset">
+            <br>
+
+            <h2>7. Button</h2>
+            <input type="button" value="This is a button">
+
+            <h2>8. File</h2>
+            <p>FileDomain: Select and upload the files from local devices.</p>
+            <input type="file">
+
+            <br>
+            <a href="./Learn_20210124_Label.html">[ Optimized ]</a>
+        </form>
+    </div>
+</body>
+
+</html>
