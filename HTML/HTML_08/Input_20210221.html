@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input</title>
+    <style>
+        input::placeholder {
+            color: #960a57;
+        }
+
+        /*属性选择器*/
+        input[type = password] {
+            color: coral;
+            background-color: #535353;
+            border: 0;
+
+            outline: none;
+        }
+
+        input[type = url] {
+            color: cornsilk;
+            background-color: rgb(16, 136, 12);
+            border: 0;
+
+            outline: none;
+        }
+
+        input[type = email] {
+            color: #960a57;
+            background-color: rgb(255, 172, 204);
+            border: 0;
+
+            outline: none;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <ul>
+            <li>Name: <input type="text" autofocus></li>
+            <li>Password: <input type="password" required></li>
+            <li>Email: <input type="email" placeholder="XXX@XXX.com"></li>
+            <li>URL: <input type="url"></li>
+            <li>Date: <input type="date"></li>
+            <li>Time: <input type="time"></li>
+            <li>Number: <input type="number"></li>
+            <li>Search: <input type="search" name="search" autocomplete="on"></li>
+            <li>Color: <input type="color"></li>
+            <li>File: <input type="file" multiple></li>
+            <li><input type="submit"></li>
+        </ul>
+    </form>
+    <!-- 
+        Attributes: 
+            1. autofocus: Once into the web, cursor will automatically focus on the form.
+            2. required: this form can't be empty.
+            3. placeholder: show the hint in the form.
+            4. autocomplete: Your input data will be selected and be shown at the next time you visit the web.
+            5. mutiple: More than one file can be selceted will uploading files.
+     -->
+</body>
+
+</html>
