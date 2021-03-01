@@ -1,0 +1,74 @@
+/*  Selector  */
+
+body {
+    background-color: #2d2d2d;
+}
+
+.text {
+    margin: 20px;
+    padding: 80px;
+    text-align: center;
+    text-indent: 2em;
+    line-height: 2em;
+}
+
+#emphasize_1, #emphasize_2 {
+    font-style: italic;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+a {
+    text-decoration: none;
+    color: gold;
+}
+
+.Box_1 {
+    background: #1d2c3b;
+    color: #faf8a1;
+
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 20px;  /* 16px */
+    font-weight: 500;  /* 400-normal, 700-bold */
+}
+
+.Box_2 {
+    background-color: #224b3b;
+    color: #ffab3d;
+
+    font-size: 25px;
+}
+
+.Box_3 {
+    background-color: #38303f;  
+    color: #f59700;
+
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+}
+
+/*
+font:
+    font-size
+    font-family
+    font-weight
+    font-style
+*/
+
+/*
+text:
+    color
+    text-align
+    text-decoration
+    text-indent (em)
+    line-height (em)
+*/
+
+/*
+em是一个相对单位，表示为当前字体大小的N倍,浏览器默认字体大小为16px
+*/
+
+
+

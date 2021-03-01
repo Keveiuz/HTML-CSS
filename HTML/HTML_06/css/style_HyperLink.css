@@ -1,0 +1,58 @@
+/* Initialize */
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    width: 400px;
+    height: 40px;
+    background-color: #535353;
+
+    color: #ffffff;
+    font-size: 1.5em;
+    font-weight: 700;
+    font-family:'Courier New', Courier, monospace;
+    
+    text-decoration: none;
+    text-align: center;
+    line-height: 40px;
+
+    /*inline element & block element*/
+    /* use "display" to trans between inline and block */
+    display: block;
+    padding: 5px;
+}
+
+a:hover {
+    background-color: #f86a29;;
+}
+
+.hyperlink {
+    text-align: center;
+}
+
+/*
+    block element:
+        1. Ocuupy one line
+        2. able to set width, height
+
+    inline element:
+        1. display in one line
+        2. unable to set width, height 
+*/
+
+/*
+    text-align Property:
+        1. Setting father element "text-align: center" and daughter element will be center.
+        2. if daughter element isn't inline element, text-align will not be operated to be center.
+        3. By settting property "display: inline/block/inline-block" to change the element. Thus it can be operated.
+*/
+
+/*
+    element-center:
+    horizontal: text-align: center
+    vertical: line-height = height
+ */

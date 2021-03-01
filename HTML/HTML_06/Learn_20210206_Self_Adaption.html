@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style_Self_Adaption.css">
+    <title>Self-adaption</title>
+</head>
+<body>
+    <h2>0. Incorrect Sample</h2>
+    <div class="box_O">
+        <div class="Box_1"></div>
+        <div class="Box_2"></div>
+        <div class="Box_3"></div>
+        <!-- 浮动的盒子本身不占有空间，不浮动的父盒子为标准流，会与之后的标准流元素顺序排列。于是之后的标准流元素就占据浮动的子盒子的空间。此时需要清除子元素的浮动属性，实现父盒子大小的自适应 (闭合浮动) -->
+    </div>
+    <br><br><br><br><br><br>
+
+    <h2>1. Tag</h2>
+    <div class="box_I">
+        <div class="Box_1"></div>
+        <div class="Box_2"></div>
+        <div class="Box_3"></div>
+        <div class="clear"></div>
+        <!-- 法一：隔墙法 / 额外标签法-->
+        <!-- Not Recommanded -->
+    </div>
+    <br>
+
+    <h2>2. Overflow</h2>
+    <div class="box_II">
+        <div class="Box_1"></div>
+        <div class="Box_2"></div>
+        <div class="Box_3"></div>
+        <!-- 法二：为父元素添加overflow属性 -->
+    </div>
+    <br>
+
+    <h2>3. 伪元素清除浮动</h2>
+    <div class="box_III clearfix">
+        <div class="Box_1"></div>
+        <div class="Box_2"></div>
+        <div class="Box_3"></div>
+        <!-- 法三：使用clearfix伪类 -->
+        <!-- Advanced Method -->
+    </div>
+
+    <h2>4. 双伪元素清除浮动</h2>
+    <div class="box_IV clearfix">
+        <div class="Box_1"></div>
+        <div class="Box_2"></div>
+        <div class="Box_3"></div>
+        <!-- 法三：使用clearfix双伪类，使前后都清除浮动 -->
+        <!-- Comprehensive Method -->
+    </div>
+</body>
+</html>

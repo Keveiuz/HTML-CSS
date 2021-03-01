@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+div:hover {
+    box-shadow: 10px 10px 10px -4px rgb(0, 0, 0, .3);
+}
+
+
+.header {
+    height: 100px;
+    background-color: #e4e4e4;
+}
+.header .logo {
+    height: 60px;
+    width: 60px;
+    background-color: rgb(155, 155, 155);
+
+    margin: 20px 0;
+    margin-left: 110px;
+
+    display: inline-block;
+    float: left;
+}
+.header .searchBar {
+    width: 700px;
+    height: 50px;
+    background-color: rgb(155, 155, 155);
+
+    display: inline-block;
+    float: left;
+    margin: 25px 50px;
+}
+.header .button {
+    width: 80px;
+    height: 50px;
+    background-color: rgb(155, 155, 155);
+
+    display: inline-block;
+    float: left;
+    margin: 25px 0px;
+}
+.header .user {
+    width: 50px;
+    height: 50px;
+    background-color: rgb(155, 155, 155);
+
+    border-radius: 50%;
+    
+    margin: 20px 0;
+    margin-right: 110px;
+
+    display: inline-block;
+    float: right;
+}
+
+
+.banner {
+    width: 1223px;
+    height: 100px;
+    background-color: #f8f3d4;
+
+    margin: 0 auto;
+}
+
+.banner div {
+    width: 233px;
+    height: 50px;
+    background-color: #ffde7d;
+
+    margin: 25px 0;
+    margin-right: 14px;
+
+    display: inline-block;
+    float: left;
+}
+
+/******************************/
+.last {
+    margin-right: 0!important;
+}
+
+.Box_1 {
+    width: 1223px;
+    height: 285px;
+
+    background-color: #ffe2e2;
+
+    margin: 0 auto;
+}
+.Box_1 div {
+    width: 296px;
+    height: 285px;
+
+    background: #ffc7c7;
+
+    display: inline-block;
+    float: left;
+
+    margin-right: 13px;
+}
+
+.Box_2 {
+    width: 1226px;
+    height: 615px;
+
+    background-color: #e3fdfd;
+
+    margin: 20px auto;
+}
+.Box_2 .left {
+    width: 234px;
+    height: 615px;
+    background-color: #a6e3e9;
+
+    display: inline-block;
+    float: left;
+
+    margin-right: 14px;
+}
+.Box_2 .right {
+    width: 978px;
+    height: 615px;
+    background: #cbf1f5;
+
+    display: inline-block;
+    float: left;
+}
+.R-top div, .R-bottom div {
+    width: 234px;
+    height: 300px;
+
+    background-color: #a6e3e9;
+
+    display: inline-block;
+    float: left;
+
+    margin-right: 14px;
+}
+.R-bottom div {
+    margin-top: 14px;
+}
+/**********************************/
+
+.footer {
+    height: 80px;
+    background-color: #e4e4e4;
+
+    padding: 0px 200px;
+}
+.footer .up {
+    height: 26px;
+
+    padding: 7px 0px;
+}
+.footer .up .vote {
+    width: 400px;
+    height: 25px;
+    background-color: rgb(155, 155, 155);
+
+    display: inline-block;
+    float: left;
+
+    margin-right: 14px;
+}
+.footer .up .regesiter {
+    width: 626px;
+    height: 25px;
+    background-color: rgb(155, 155, 155);
+
+    display: inline-block;
+    float: left;
+}
+.footer .down {
+    height: 26px;
+
+    padding: 7px 0px;
+}
+.footer .down .copyright {
+    width: 525px;
+    height: 25px;
+    background-color: rgb(155, 155, 155);
+
+    margin: 0 auto;
+}
+

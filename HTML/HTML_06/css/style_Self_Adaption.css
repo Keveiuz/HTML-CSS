@@ -1,0 +1,102 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+h2 {
+    width: 70%;
+    display: block;
+    margin: 0 auto;
+}
+
+.Box_1 {
+    width: 100px;
+    height: 100px;
+    background-color: #539092;
+
+    float: left;
+}
+
+.Box_2 {
+    width: 100px;
+    height: 100px;
+    background-color: #8bcfcc;
+
+    float: left;
+}
+
+.Box_3 {
+    width: 100px;
+    height: 100px;
+    background-color: #aee8e6;
+
+    float: left;
+}
+
+.box_O {
+    width: 70%;
+    border: darkgray 2px solid;
+    margin: 0 auto;
+}
+
+/* Method 1 */
+.box_I {
+    width: 70%;
+    border: darkgray 2px solid;
+    margin: 0 auto;
+}
+/*用于清除浮动元素的浮动属性而使父级元素自适应*/
+.clear {
+    clear: both;
+}
+
+/* Method 2 */
+.box_II {
+    width: 70%;
+    border: darkgray 2px solid;
+    margin: 0 auto;
+
+    overflow: hidden;
+}
+
+/* Method 3 */
+.box_III {
+    width: 70%;
+    border: darkgray 2px solid;
+    margin: 0 auto;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.clearfix {
+    /* Special for IE6, IE7 */
+    *zoom: 1;
+}
+
+/* Method 4 */
+.box_IV {
+    width: 70%;
+    border: darkgray 2px solid;
+    margin: 0 auto;
+}
+
+.clearfix::before,
+.clearfix::after {
+    content: "";
+    display: table;
+}
+
+.clear::after {
+    clear: both;
+}
+
+.clearfix {
+    /* Special for IE6, IE7 */
+    *zoom: 1;
+}

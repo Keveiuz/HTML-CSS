@@ -1,0 +1,282 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+div {
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.bgc1 {
+    width: 100%;
+    background-color: #0a1e42;
+    overflow: scroll;
+}
+.bgc1 .ln1 {
+    width: 70%;
+    height: 200px;
+    margin: 75px auto;
+    border: solid 25px #96eaff;
+    border-radius: 50px;
+
+    text-align: center;
+}
+.bgc1 .ln1 h1 {
+    color: #96eaff;
+
+    font-size: 150px;
+    line-height: 200px;
+}
+
+.bgc2 {
+    width: 100%;
+    background-color: #ffebb2;
+    overflow: scroll;
+}
+.bgc2 .ln2 {
+    width: 70%;
+    height: 200px;
+    margin: 75px auto;
+    border: solid 25px #0a1e42;
+    border-radius: 50px;
+
+    text-align: center;
+}
+.bgc2 .ln2 h1 {
+    color: #0a1e42;
+
+    font-size: 150px;
+    line-height: 200px;
+}
+
+.bgc3 {
+    width: 100%;
+    background-color: #afefff;
+    overflow: scroll;
+}
+.bgc3 .ln3 {
+    width: 70%;
+    height: 200px;
+    margin: 75px auto;
+    border: solid 25px #0278ae;
+    border-radius: 50px;
+
+    text-align: center;
+}
+.bgc3 .ln3 h1 {
+    color: #0278ae;
+
+    font-size: 150px;
+    line-height: 200px;
+}
+
+.bgc4 {
+    width: 100%;
+    background-color: #ffd000;
+    overflow: scroll;
+}
+.bgc4 .ln4 {
+    width: 70%;
+    height: 200px;
+    margin: 75px auto;
+    border: solid 25px #0e0e0e;
+    border-radius: 50px;
+
+    text-align: center;
+}
+.bgc4 .ln4 h1 {
+    color: #0e0e0e;
+
+    font-size: 150px;
+    line-height: 200px;
+}
+
+.bgc5 {
+    width: 100%;
+    background-color: #1f1f1f;
+    overflow: scroll;
+}
+.bgc5 .ln5 {
+    width: 70%;
+    height: 200px;
+    margin: 75px auto;
+    border: solid 25px #00ff80;
+    border-radius: 50px;
+
+    text-align: center;
+}
+.bgc5 .ln5 h1 {
+    color: #00ff80;
+
+    font-size: 150px;
+    line-height: 200px;
+}
+
+.bgc6 {
+    width: 100%;
+    background-color: #525252;
+    overflow: scroll;
+}
+.bgc6 .ln6 {
+    width: 70%;
+    height: 200px;
+    margin: 75px auto;
+    border: solid 25px #ff6c17;
+    border-radius: 50px;
+
+    text-align: center;
+}
+.bgc6 .ln6 h1 {
+    color: #ff6c17;
+
+    font-size: 150px;
+    line-height: 200px;
+}
+
+.bgc7 {
+    width: 100%;
+    background-color: #403568;
+    overflow: scroll;
+}
+.bgc7 .ln7 {
+    width: 70%;
+    height: 200px;
+    margin: 75px auto;
+    border: solid 25px #7ee59a;
+    border-radius: 50px;
+
+    text-align: center;
+}
+.bgc7 .ln7 h1 {
+    color: #7ee59a;
+
+    font-size: 150px;
+    line-height: 200px;
+}
+
+.bgc8 {
+    width: 100%;
+    background-color: rgb(185, 16, 16);
+    overflow: scroll;
+}
+.bgc8 .ln8 {
+    width: 70%;
+    height: 200px;
+    margin: 75px auto;
+    border: solid 25px rgb(255, 217, 0);
+    border-radius: 50px;
+
+    text-align: center;
+}
+.bgc8 .ln8 h1 {
+    color: rgb(255, 217, 0);
+
+    font-size: 150px;
+    line-height: 200px;
+}
+
+.bgc9 {
+    width: 100%;
+    background-color: rgb(105, 200, 238);
+    overflow: scroll;
+}
+.bgc9 .ln9 {
+    width: 70%;
+    height: 200px;
+    margin: 75px auto;
+    border: solid 25px rgb(255, 217, 0);
+    border-radius: 50px;
+
+    text-align: center;
+}
+.bgc9 .ln9 h1 {
+    color: rgb(255, 217, 0);
+
+    font-size: 150px;
+    line-height: 200px;
+}
+
+.bgc10 {
+    width: 100%;
+    background-color: rgb(10, 141, 27);
+    overflow: scroll;
+}
+.bgc10 .ln10 {
+    width: 70%;
+    height: 200px;
+    margin: 75px auto;
+    border: solid 25px #ffffff;
+    border-radius: 50px;
+
+    text-align: center;
+}
+.bgc10 .ln10 h1 {
+    color: #ffffff;
+
+    font-size: 150px;
+    line-height: 200px;
+}
+
+.bgc11 {
+    width: 100%;
+    background-color: rgb(119, 65, 15);
+    overflow: scroll;
+}
+.bgc11 .ln11 {
+    width: 70%;
+    height: 200px;
+    margin: 75px auto;
+    border: solid 25px rgb(40, 223, 64);
+    border-radius: 50px;
+
+    text-align: center;
+}
+.bgc11 .ln11 h1 {
+    color: rgb(40, 223, 64);
+
+    font-size: 150px;
+    line-height: 200px;
+}
+
+.bgc12 {
+    width: 100%;
+    background-color: rgb(0, 119, 255);
+    overflow: scroll;
+}
+.bgc12 .ln12 {
+    width: 70%;
+    height: 200px;
+    margin: 75px auto;
+    border: solid 25px rgb(0, 255, 221);
+    border-radius: 50px;
+
+    text-align: center;
+}
+.bgc12 .ln12 h1 {
+    color: rgb(0, 255, 221);
+
+    font-size: 150px;
+    line-height: 200px;
+}
+
+.bgc13 {
+    width: 100%;
+    background-color: #695552;
+    overflow: scroll;
+}
+.bgc13 .ln13 {
+    width: 70%;
+    height: 200px;
+    margin: 75px auto;
+    border: solid 25px #609832;
+    border-radius: 50px;
+
+    text-align: center;
+}
+.bgc13 .ln13 h1 {
+    color: #b69c6e;
+
+    font-size: 150px;
+    line-height: 200px;
+}

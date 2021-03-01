@@ -1,0 +1,237 @@
+html, body {
+    width: 100%;
+    height: 100%;
+
+    margin: 0;
+    padding: 0;
+
+    background-color: #535353;
+}
+
+.Nav a {
+    display: block;
+
+    width: auto;
+    height: 40px;
+    line-height: 40px;
+
+    background-color: #535353;
+    color: #f2f2f2;
+
+    font-size: 1.5em;
+
+    text-align: center;
+    text-decoration: none;
+
+    background-image: url("../../../Icons/12.JPG");
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 24px;
+
+    margin: 0 auto;
+}
+
+.Nav a:nth-child(odd):hover {
+    background-color: skyblue;
+    color: black;
+}
+
+.Nav a:nth-child(even):hover {
+    background-color: gold;
+    color: black;
+}
+
+.icon .Name {
+    display: inline-block;
+
+    width: 200px;
+    height: 40px;
+    background-color: #ff6600;
+
+    text-align: center;
+}
+
+.Name h2 {
+    line-height: 40px;
+    margin: 0;
+}
+
+#Home {
+    background-image: url("../../../Icons_02/Black_Government.PNG");
+    background-size: 24px;
+    background-repeat: no-repeat;
+    background-position: 20px center;
+    background-color: #535353;
+
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+
+    text-align: center;
+    
+    display: inline-block;
+}
+#Home a {
+    color: #f2f2f2;
+
+    font-size: 1.5em;
+
+    text-decoration: none;
+}
+#Home:hover{
+    background-color: gold;
+}
+#Home:hover a {
+    color: black;
+}
+
+#Chat {
+    background-image: url("../../../Icons_02/White_Chat.PNG");
+    background-size: 24px;
+    background-repeat: no-repeat;
+    background-position: 23px center;
+    background-color: #535353;
+
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+
+    text-align: center;
+
+    display: inline-block;
+
+}
+#Chat a {
+   color: #f2f2f2;
+
+    font-size: 1.5em;
+
+    text-decoration: none; 
+}
+#Chat:hover{
+    background-color: skyblue;
+}
+#Chat:hover a {
+    color: black;
+}
+
+#Search {
+    background-image: url("../../../Icons_02/White_Target.PNG");
+    background-size: 24px;
+    background-repeat: no-repeat;
+    background-position: 20px center;
+    background-color: #535353;
+
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+
+    text-align: center;
+
+    display: inline-block;
+
+}
+#Search a {
+    color: #f2f2f2;
+ 
+     font-size: 1.5em;
+ 
+     text-decoration: none; 
+ }
+#Search:hover{
+    background-color: gold;
+}
+#Search:hover a {
+    color: black;
+}
+
+#Contacts {
+    background-image: url("../../../Icons_02/Black_Chat.PNG");
+    background-size: 24px;
+    background-repeat: no-repeat;
+    background-position: 20px center;
+    background-color: #535353;
+
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+
+    text-align: center;
+
+    display: inline-block;
+
+}
+#Contacts a {
+    color: #f2f2f2;
+ 
+     font-size: 1.5em;
+ 
+     text-decoration: none; 
+ }
+#Contacts:hover{
+    background-color: skyblue;
+}
+#Contacts:hover a {
+    color: black;
+}
+
+#Edit {
+    background-image: url("../../../Icons_02/White_Document.PNG");
+    background-size: 24px;
+    background-repeat: no-repeat;
+    background-position: 20px center;
+    background-color: #535353;
+
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+
+    text-align: center;
+
+    display: inline-block;
+
+}
+#Edit a {
+    color: #f2f2f2;
+ 
+     font-size: 1.5em;
+ 
+     text-decoration: none; 
+ }
+#Edit:hover{
+    background-color: gold;
+}
+#Edit:hover a {
+    color: black;
+}
+
+#Help {
+    background-image: url("../../../Icons_02/Black_Help.PNG");
+    background-size: 24px;
+    background-repeat: no-repeat;
+    background-position: 20px center;
+    background-color: #535353;
+
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+
+    text-align: center;
+
+    display: inline-block;
+
+}
+#Help a {
+    color: #f2f2f2;
+ 
+     font-size: 1.5em;
+ 
+     text-decoration: none; 
+ }
+#Help:hover{
+    background-color: skyblue;
+}
+#Help:hover a {
+    color: black;
+}
+
