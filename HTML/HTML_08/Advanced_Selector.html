@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute Selector</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #535353;
+        }
+
+        .Attribute_Selector {
+            background-color: #c5c5c5;
+            width: 500px;
+            margin: 5% auto;
+
+            text-align: center;
+            overflow: scroll;
+        }
+
+        .Attribute_Selector input::placeholder {
+            color: #333333;
+        }
+
+        .Attribute_Selector ul li {
+            list-style: none;
+            height: 30px;
+            width: 500px;
+            margin: 10px 0;
+
+            font-size: 25px;
+            line-height: 30px;
+        }
+        
+        .Attribute_Selector input[type = "text"] {
+            color: #333333;
+            background-color: #999999;
+            border: 0;
+            font-size: 20px;
+
+            outline: none;
+        }
+
+        .Attribute_Selector input[type = "date"] {
+            color: #333333;
+            background-color: #999999;
+            border: 0;
+
+            outline: none;
+        }
+
+        .Attribute_Selector input[type = "reset"],
+        .Attribute_Selector input[type = "submit"] {
+            color: #333333;
+            background-color: #999999;
+            border: 0;
+            width: 100px;
+            padding: 2px;
+            
+            font-size: 20px;
+            outline: none;
+        }
+
+        
+
+
+        .Pseudo_Class_1 {
+            background-color: #535353;
+            width: 300px;
+            margin: 5% auto;
+
+            text-align: center;
+            font-family: Audiowide;
+            overflow: scroll;
+        }
+
+        .Pseudo_Class_1 ul li {
+            width: 300px;
+            height: 50px;
+            font-size: 30px;
+            line-height: 50px;
+        }
+
+        .Pseudo_Class_1 ul li:nth-child(odd){
+            background: rgb(153, 153, 153);
+            color: #000000;
+        }
+
+        .Pseudo_Class_1 ul li:nth-child(even) {
+            background-color: rgb(61, 61, 61);
+            color: #ffffff;
+        }
+
+        .Pseudo_Class_1 ul li:nth-child(odd):hover {
+            background: skyblue;
+            color: #ffffff;
+        }
+
+        .Pseudo_Class_1 ul li:nth-child(even):hover {
+            background-color: gold;
+            color: #000000;
+        }
+
+
+        .Pseudo_Class_2 {
+            background-color: #535353;
+            width: 300px;
+            margin: 5% auto;
+
+            text-align: center;
+            font-family: Audiowide;
+            overflow: scroll;
+        }
+
+        .Pseudo_Class_2 ul li {
+            width: 300px;
+            height: 50px;
+            font-size: 30px;
+            line-height: 50px;
+        }
+
+        .Pseudo_Class_2 ul li:nth-child(3n) {
+            background: rgb(206, 206, 206);
+            color: #020202;
+            cursor: pointer;
+        }
+
+        .Pseudo_Class_2 ul li:nth-child(3n + 1) {
+            background-color: rgb(63, 63, 63);
+            color: #000000;
+            cursor: pointer;
+        }
+
+        .Pseudo_Class_2 ul li:nth-child(3n + 2) {
+            background-color: #8a8a8a;
+            color: rgb(12, 12, 12);
+            cursor: pointer;
+        }
+
+        .Pseudo_Class_2 ul li:nth-child(3n):hover {
+            background: skyblue;
+            color: #ffffff;
+            cursor: pointer;
+        }
+
+        .Pseudo_Class_2 ul li:nth-child(3n + 1):hover {
+            background-color: gold;
+            color: #000000;
+            cursor: pointer;
+        }
+
+        .Pseudo_Class_2 ul li:nth-child(3n + 2):hover {
+            background-color: #ff7417;
+            color: slategray;
+            cursor: pointer;
+        }
+        /*
+            nth-child(): 表达式
+            <1> 2n, 3n, 4n: n的倍数
+            <2> 2n+1, 3n+2, 4n+3: n倍后的第几个
+            <3> n+5: 从第五个开始
+            <4> -n+5: 前五个
+
+            ** nth-child(): 的匹配规则   #区别于nth-of-type()
+            Code: 
+                <section>
+                    <p>Child_1</p>
+                    <span>Child_2<span>
+                    <div>Child_3<div>
+                </section>
+            Selector:
+                section div:nth-child(2) {
+                    font-size: 40px;
+                }
+            
+            此时不会有元素被选择器选择！！nth-child(n)会为所有子元素编号
+            原理: CSS在匹配时, 会优先读取nth-child(n), 对所有子元素按顺序编号, 选出第n个元素后再匹配类型
+            过程: Step_1: nth-child(2) -> 为所有子元素按顺序编号, 并预选子元素中的第二个
+                 Step_2: div:nth-child(2) -> 判断第二个元素类型是否为div
+                 Step_3: span != div -> 类型不符, 匹配失败
+         */
+
+        
+        section {
+            background-color: #535353;
+            width: 900px;
+            margin: 5% auto;
+
+            text-align: center;
+            font-family: Audiowide;
+            overflow: scroll;
+        }
+
+        section p,
+        section div,
+        section span
+        {
+            display: inline-block;
+            float: left;
+
+            width: 300px;
+            height: 50px;
+            font-size: 30px;
+            line-height: 50px;
+        }
+
+        section p:nth-of-type(3n),
+        section div:nth-of-type(3n + 1),
+        section span:nth-of-type(3n + 2) {
+            background: rgb(206, 206, 206);
+            color: #020202;
+            cursor: pointer;
+        }
+        section p:nth-of-type(3n + 1),
+        section div:nth-of-type(3n + 2),
+        section span:nth-of-type(3n) {
+            background-color: rgb(63, 63, 63);
+            color: #ffffff;
+            cursor: pointer;
+        }
+        section p:nth-of-type(3n + 2),
+        section div:nth-of-type(3n),
+        section span:nth-of-type(3n + 1) {
+            background-color: #8a8a8a;
+            color: rgb(12, 12, 12);
+            cursor: pointer;
+        }
+
+        section p:hover,
+        section div:hover,
+        section span:hover {
+            background-color: rgb(255, 196, 0);
+            color: black;
+        }
+
+        /* 
+            nth-of-type()匹配规则:
+            该伪类选择器会优先读取伪类前的元素，并给符合的类型排序
+            e.g. Code:
+                    <section>
+                        <div>Child_1</div>
+                        <span>Child_2</span>
+                        <span>Child_3</span>
+                        <div>Child_4</div>         <- Selected
+                        <div>Child_5</div>
+                        <span>Child_6</span>
+                    </section>
+                CSS:
+                    section div:nth-of-type(2) {
+                        font-size: 40px;
+                    }
+            原理:
+                    Step_1: 读取nth-of-type()前的类型div
+                    Step_2: 为section中所有div排序
+                    Step_3: 选择第二个div    
+         */
+    </style>
+</head>
+<body>
+    <div class="Attribute_Selector">
+        <form action="#">
+            <ul>
+                <li>User: <input type="text" placeholder="First/Last Name"></li>
+                <li>Gender: <input type="radio" name="Gender" value="Male">&nbsp;Male&nbsp;
+                            <input type="radio" name="Gender" value="Female">&nbsp;Female
+                </li>
+                <li>Birthday: <input type="date"></li>
+                <li>WorkBranch: 
+                    <select name="USA" placeholder="A.K.A">
+                        <option value=""></option>
+                        <option value="AL">Alabama</option>
+                        <option value="AK">Alaska</option>
+                        <option value="AZ">Arizona</option>
+                        <option value="AR">Arkansas</option>
+                        <option value="CA">California</option>
+                        <option value="CO">Colorado</option>
+                        <option value="F">Florida</option>
+                        <option value="GA">Georgia</option>
+                    </select>
+                </li>
+                <li><input type="reset">&nbsp;&nbsp;<input type="submit"></li>
+            </ul>
+        </form>
+    </div>
+
+    <div class="Pseudo_Class_1">
+        <ul>
+            <li>Child_1</li>
+            <li>Child_2</li>
+            <li>Child_3</li>
+            <li>Child_4</li>
+        </ul>
+    </div>
+
+    <div class="Pseudo_Class_2">
+        <ul>
+            <li>Child_1</li>
+            <li>Child_2</li>
+            <li>Child_3</li>
+            <li>Child_4</li>
+            <li>Child_5</li>
+            <li>Child_6</li>
+        </ul>
+    </div>
+
+    <section>
+        <p>Child_1</p>
+        <div>Child_2</div>
+        <span>Child_3</span>
+        <p>Child_4</p>
+        <div>Child_5</div>
+        <span>Child_6</span>
+        <p>Child_7</p>
+        <div>Child_8</div>
+        <span>Child_9</span>
+        <p>Child_10</p>
+        <div>Child_11</div>
+        <span>Child_12</span>
+        <p>Child_13</p>
+        <div>Child_14</div>
+        <span>Child_15</span>
+        <p>Child_16</p>
+        <div>Child_17</div>
+        <span>Child_18</span>
+    </section>
+</body>
+</html>
