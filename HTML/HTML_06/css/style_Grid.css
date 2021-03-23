@@ -1,0 +1,167 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    margin: 0;
+    padding: 0;
+    height: 320vh;
+
+    background-color: #1d271c;
+}
+
+
+/* grid 布局基础 */
+#grid-container-1 {
+    display: grid;
+    width: 500px;
+    height: 500px;
+    background-color: #3d4022;
+
+    margin: 50px;
+    /* 定义Grid */
+    grid-template-rows: 100px 100px 100px 100px 100px;
+    grid-template-columns: 100px 100px 100px 100px 100px;
+}
+
+#grid-container-1 .cell-1 {
+    background-color: #4f5826;
+    grid-row: 1 / 3; /* start-gridline / end-gridline */
+    grid-column: 2 / span 3; /* span n : 延伸n格 */
+}
+
+#grid-container-1 .cell-2 {
+    background-color: #7c8b45;
+    grid-row: 3 / 6;
+    grid-column: 3 / 6;
+}
+
+
+/* grid 布局 : gridline重命名 */
+#grid-container-2 {
+    display: grid;
+    width: 500px;
+    height: 500px;
+    background-color: #7c8b45;
+
+    margin: 50px;
+    /* 定义Grid */
+    /* Grid line rename */
+    grid-template-rows: [Y1] 100px [Y2] 100px [Y3] 100px [Y4] 100px [Y5] 100px [Y6];
+    grid-template-columns: [X1] 100px [X2] 100px [X3] 100px [X4] 100px [X5] 100px [X6];
+}
+
+#grid-container-2 .cell-1 {
+    opacity: .9;
+    background-color: #4f5826;
+
+    /* 使用重命名的网格线名布局 */
+    grid-row: Y1 / Y4; /* start-gridline / end-gridline */
+    grid-column: X2 / X4; /* span n : 延伸n格 */
+}
+
+#grid-container-2 .cell-2 {
+    opacity: .9;
+    background-color: #a39688;
+    
+    grid-row: Y3 / Y6;
+    grid-column: X3 / X6;
+}
+
+
+/* grid 布局 : grid-area*/
+#grid-container-3 {
+    display: grid;
+    width: 540px;
+    height: 540px;
+    background-color: #a39688;
+
+    margin: 50px;
+    /* 定义Grid */
+    /* Grid line rename */
+    grid-template-rows: [Y1] 100px [Y2] 100px [Y3] 100px [Y4] 100px [Y5] 100px [Y6];
+    grid-template-columns: [X1] 100px [X2] 100px [X3] 100px [X4] 100px [X5] 100px [X6];
+    grid-template-areas: 
+        "header header header header header"
+        "nav main main main main"
+        "nav main main main main"
+        "nav main main main main"
+        ". footer footer footer ." ;/* '.'为空白符，此处网格为空 */
+
+    /* 块间距 */
+    row-gap: 10px;
+    column-gap: 10px;
+}
+
+#grid-container-3 .cell-1 {
+    grid-area: header;
+    opacity: .9;
+    background-color: #3d4022;
+}
+
+#grid-container-3 .cell-2 {
+    grid-area: nav;
+    opacity: .9;
+    background-color: #4f5826;
+}
+
+#grid-container-3 .cell-3 {
+    grid-area: main;
+    opacity: .9;
+    background-color: #7c8b45;
+}
+
+#grid-container-3 .cell-4 {
+    grid-area: footer;
+    opacity: .9;
+    background-color: #3d4022;
+}
+
+
+
+/* grid 布局 : fr & repeat() */
+#grid-container-4 {
+    display: grid;
+    width: 540px;
+    height: 540px;
+    background-color: #ffd000;
+
+    margin: 50px;
+    /* 定义Grid */
+    /* Grid fr & repeat */
+    /* fr: 比例单位， 会把行/列分成所有fr相加之和份， 在按照设定的分数分给定义的部分 */
+    /* repeat(repeat-time, repeat-variable) */
+    grid-template-rows: 2fr repeat(3, 3fr) 2fr ;
+    grid-template-columns: repeat(2, 1fr) 3fr 2fr 1fr;
+    grid-template-areas: 
+        "header header header header header"
+        "nav nav main main main"
+        "nav nav main main main"
+        "nav nav main main main"
+        ". footer footer footer ." ;/* '.'为空白符，此处网格为空 */
+
+    /* 块间距 */
+    row-gap: 10px;
+    column-gap: 10px;
+}
+
+#grid-container-4 .cell-1 {
+    grid-area: header;
+    background-color: #202020;
+}
+
+#grid-container-4 .cell-2 {
+    grid-area: nav;
+    background-color: #6e6e6e;
+}
+
+#grid-container-4 .cell-3 {
+    grid-area: main;
+    background-color: #c0c0c0;
+}
+
+#grid-container-4 .cell-4 {
+    grid-area: footer;
+    background-color: #202020;
+}

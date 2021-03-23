@@ -1,8 +1,10 @@
 <1> command + enter : 在当前行下方插入一行
 <2> command + shift + enter : 在当前行上方插入一行
 <3> option + shift + down⬇️ : 复制当前行到下一行
-<4> select + option + shift + down⬇️ : 复制选中部分到下一行
+<4> [select] + option + shift + down⬇️ : 复制选中部分到下一行
 <5> option + up⬆️ / down⬇️ : 将当前行上移 / 下移
 <6> option + backspace : 删除多余空格
 <7> command + option + up⬆️ / down⬇️ : 选中当前行以上 / 以下的所有内容
 <8> command + ? : 注释选中部分
+<9> [select] + command + shift + 'L' : 编辑全文中正则表达式匹配的部分
+<10> option + shift + [dragdown] : 多行同一位置同时编辑（快速删除非tab格式的前导空白格）
