@@ -1,0 +1,428 @@
+/* 声明字体图标 */
+@font-face {
+    font-family: 'icomoon';
+    src: url('../fonts/icomoon.eot?vlzqea');
+    src: url('../fonts/icomoon.eot?vlzqea#iefix') format('embedded-opentype'),
+        url('../fonts/icomoon.ttf?vlzqea') format('truetype'),
+        url('../fonts/icomoon.woff?vlzqea') format('woff'),
+        url('../fonts/icomoon.svg?vlzqea#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+
+/* Public 公共区域 */
+/* 版心 */
+.w {
+    width: 1200px;
+    margin: 0 auto;
+}
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
+
+
+/* Private 私有区域 */
+/************* shortcut start ****************/
+.shortcut {
+    height: 30px;
+    line-height: 30px;
+    background-color: hsl(37, 59%, 81%);
+    color: hsl(0, 0%, 25%);
+}
+.shortcut ul li {
+    float: left;
+    margin: 0 5px;
+}
+.shortcut ul li a {
+    color: hsl(0, 0%, 25%);
+}
+.shortcut ul li a:hover {
+    color: hsl(37, 15%, 51%);
+}
+
+.shortcut .fr ul li:nth-child(even) {
+    width: 1px;
+    height: 15px;
+    margin: 7px 15px;
+    background-color: hsl(0, 0%, 25%);
+}
+.arrow-icon::after {
+    content: '\ea3e';
+    font-family: 'icomoon';
+    font-size: 12px;
+    margin-left: 10px;
+}
+/************* shortcut end ****************/
+
+
+/****************** Header start***************/
+.header {
+    position: relative;
+
+    height: 120px;
+    background-color: hsl(37, 15%, 51%);
+}
+
+/* logo */
+.header .logo {
+    position: absolute;
+
+    width: 70px;
+    height: 70px;
+    background-color: hsl(37, 59%, 81%);
+    background-image: url(../images/icon_Logo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    border-radius: 50%;
+    margin: 25px 40px;
+}
+.header .logo a {
+    display: block;
+
+    width: 70px;
+    height: 70px;
+    font-size: 0;
+}
+
+/* search */
+.header .search {
+    position: absolute;
+    left: 300px;
+    top: 20px;
+
+    width: 550px;
+    height: 40px;
+    border: 2px solid hsl(37, 59%, 81%);
+}
+.header .search input[type = "search"] {
+    width: 450px;
+    height: 36px;
+    padding: 2px;
+    padding-left: 20px;
+
+    background-color: hsl(37, 15%, 51%);
+    font-size: 25px;
+    line-height: 36px;
+    color: hsl(37, 59%, 81%);
+}
+.header .search button {
+    position: absolute;
+    
+    width: 96px;
+    height: 36px;
+    background-color: hsl(37, 59%, 81%);
+    
+    color: hsl(0, 0%, 25%);
+    font-family: serif;
+    font-size: 25px;
+}
+.header .search button:active {
+    background-color: hsl(41, 17%, 46%);
+    color: hsl(37, 59%, 81%);
+}
+
+/* hotwords */
+.header .hotwords ul {
+    position: absolute;
+    left: 300px;
+    bottom: 10px;
+}
+.header .hotwords ul li {
+    display: inline-block;
+
+    height: 40px;
+    margin: 0 10px;
+
+    line-height: 40px;
+}
+.header .hotwords ul li a {
+    color: hsl(37, 59%, 81%);
+    font-size: 20px;
+    transition: color 0.5s ease-in-out 0s;
+}
+.header .hotwords ul li:hover a {
+    color: white;
+}
+
+/* shopcar */
+.header .shopcar {
+    position: absolute;
+    top: 40px;
+    right: 75px;
+
+    width: 150px;
+    height: 40px;
+    padding-left: 15px;
+    background-color: hsl(37, 59%, 81%);
+
+    line-height: 40px;
+    transition: all .3s ease-in-out 0s;
+}
+.header .shopcar span {
+    font-size: 25px;
+    color: hsl(0, 0%, 25%);
+    transition: all .3s ease-in-out 0s;
+}
+.header .shopcar i {
+    font-family: 'icomoon';
+    font-size: 20px;
+    color: hsl(0, 0%, 25%);
+    transition: all .3s ease-in-out 0s;
+}
+.header .shopcar .counter {
+    position: absolute;
+    top: -10px;
+    left: 90px;
+
+    height: 20px;
+    background-color: hsl(0, 100%, 58%);
+    color: white;
+    border-radius: 10px 10px 10px 0px;
+    padding: 0px 5px;
+
+    font-size: 15px;
+    line-height: 20px;
+
+    transition: display .3s ease-in-out 0s;
+}
+
+.header .shopcar:hover {
+    background-color: hsl(17, 100%, 50%);
+    color: white;
+    cursor: pointer;
+}
+.header .shopcar:hover span,
+.header .shopcar:hover i
+ {
+    color: white;
+    cursor: pointer;
+}
+.header .shopcar:hover .counter {
+    display: none;
+}
+/******************* Header end ****************/
+
+
+/******************** Nav start ******************/
+.nav {
+    height: 50px;
+    border-bottom: 3px solid hsl(37, 59%, 81%);
+}
+.nav .dropdown {
+    float: left;
+
+    width: 200px;
+    height: 50px;
+    background-color: hsl(37, 59%, 81%);
+}
+.nav .dropdown .dt {
+    width: 100%;
+    height: 100%;
+    color: hsl(0, 0%, 35%);
+
+    font-size: 25px;
+    line-height: 50px;
+    text-align: center;
+}
+.nav .dropdown .dd {
+    position: relative;
+
+    height: 450px;
+    width: 200px;
+    background-color: hsl(37, 40%, 90%);
+}
+.nav .dropdown .dd ul li {
+    display: inline-block;
+
+    width: 100%;
+    height: 50px;
+
+    text-align: center;
+    line-height: 50px;
+}
+.nav .dropdown .dd ul li::after {
+    position: absolute;
+    right: 15px;
+
+    content: '\ea3c';
+    font-family: 'icomoon';
+    color: hsl(37, 40%, 90%);
+
+    transition: all .3s ease-in-out 0s;
+}
+.nav .dropdown .dd ul li a {
+    font-size: 25px;
+}
+.nav .dropdown .dd ul li:hover {
+    background-color: hsl(37, 59%, 81%);
+}
+.nav .dropdown .dd ul li:hover::after {
+    color: hsl(0, 0%, 35%);
+}
+.nav .dropdown .dd ul li:hover a {
+    color: hsl(0, 0%, 35%);
+}
+
+.nav .navitems {
+    float: left;
+}
+.nav .navitems ul li {
+    float: left;
+}
+.nav .navitems ul li a {
+    display: inline-block;
+
+    height: 50px;
+    padding: 0px 40px;
+    color: hsl(0, 0%, 35%);
+
+    line-height: 50px;
+    font-size: 25px;
+}
+.nav .navitems ul li a:hover {
+    background-color: hsl(37, 59%, 81%);
+}
+/******************** Nav end ******************/
+
+
+/*************** Main start ***************/
+.main {
+    width: 100%;
+    height: 450px;
+}
+
+.main .blank {
+    float: left;
+
+    width: 200px;
+    height: 450px;
+}
+.main .focus {
+    float: left;
+    
+    width: 700px;
+    height: 450px;
+    background-color: hsl(0, 0%, 100%);
+    background-image: url(../images/BG.svg);
+}
+.main .newsflash {
+    float: left;
+
+    width: 300px;
+    height: 450px;
+    background-color: hsl(37, 40%, 90%);
+}
+.main .newsflash ul li {
+    display: inline-block;
+    float: left;
+
+    width: 90px;
+    height: 140px;
+    background-color: hsl(37, 59%, 81%);
+
+    /* border: hsl(41, 17%, 46%) 2px solid; */
+    margin-top: 10px;
+    margin-left: 8px;
+
+    text-align: center;
+    font-size: 40px;
+    line-height: 40px;
+    color: hsl(0, 0%, 35%);
+
+    transition: box-shadow .3s ease-in-out 0s;
+}
+.main .newsflash ul li .text {
+    margin-top: 30px;
+}
+.main .newsflash ul li:hover {
+    box-shadow: 5px 5px 1px 0px hsl(0, 0%, 35%);
+}
+
+
+/***************** Footer start *************/
+
+.footer .mod_service {
+    width: 100%;
+    height: 90px;
+    padding-top: 20px;
+    background-color: hsl(37, 40%, 90%);
+}
+.footer .mod_service ul li {
+    display: inline-block;
+    float: left;
+
+    height: 70px;
+    width: 300px;
+    padding-left: 30px;
+    background-color: hsl(37, 40%, 90%);
+
+}
+.footer .mod_service ul li h5 {
+    display: block;
+    position: relative;
+    float: left;
+
+    height: 70px;
+    width: 70px;
+    background-color: hsl(37, 59%, 81%);
+    margin-right: 20px;
+    border-radius: 50%;
+}
+.footer .mod_service ul li h5 i {
+    position: absolute;
+    top: 10px;
+    left: 11px;
+
+    font-family: 'icomoon';
+    font-size: 50px;
+    color: hsl(0, 0%, 35%);
+}
+
+.footer .mod_service ul li h3 {
+    margin-top: 5px;
+    color: hsl(0, 0%, 35%);
+}
+.footer .mod_service ul li p {
+    color: hsl(0, 0%, 35%);
+}
+
+.mod_copyright {
+    height: 200px;
+    background-color: hsl(37, 40%, 90%);
+    
+    text-align: center;
+
+}
+.mod_copyright .links {
+    height: 80px;
+}
+.mod_copyright .links ul li {
+    display: inline-block;
+
+    margin-top: 50px;
+}
+.mod_copyright .links ul li:nth-child(even) {
+    height: 13px;
+    border-left: hsl(0, 0%, 35%) 1px solid;
+    margin: 0 20px;
+}
+.mod_copyright .links ul li:hover a {
+    color: hsl(37, 15%, 51%);
+}
+
+.mod_copyright .copyright {
+    margin-top: 50px;
+    color: hsl(0, 0%, 35%);
+}
+/***************** Footer end *************/
+
+
+
+
+
