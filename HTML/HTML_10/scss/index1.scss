@@ -1,0 +1,298 @@
+// sass --watch scss:css --no-source-map
+// sass --watch 写入scss路径 : 生成css路径 --no-source-map 让sass文件开始监视改动，并在指定目录下生成css文件
+//              ^要求两个目录为同级目录
+
+// color const
+$bg-1: #C6C5E1;
+$bg-2: #686688;
+
+$white-1: #fbfbfb;
+$white-2: #f2f2f2;
+$white-3: #c4c2d6;
+$white-4: #675d6e;
+
+$water-1: #7095c9;
+$water-2: #6187be;
+$water-3: #4d6d98;
+$water-4: #234062;
+
+$light-1: #def5f1;
+$light-2: #badfd9;
+
+
+// 声明函数
+@mixin cube($a, $b, $c, $color) {
+    // a: width; b: height; c:length
+    // & 引用父代选择器 (若父代为 .father, 则 &-son 子代就等价为 .father-son )
+    &-front {
+        // 调用函数
+        @include cube-front($a, $b, $c, $color);
+    }
+    &-back {
+        @include cube-back($a, $b, $c, $color);
+    }
+    &-left {
+        @include cube-left($a, $b, $c, $color); 
+    }
+    &-right {
+        @include cube-right($a, $b, $c, $color); 
+    }
+    &-top {
+        @include cube-top($a, $b, $c, $color);
+    }
+    &-bottom {
+        @include cube-bottom($a, $b, $c, $color);
+    }
+}
+@mixin cube-front($a, $b, $c, $color) {
+    width: $a;
+    height: $b;
+
+    transform: rotateX(90deg) translateZ(-$c);
+    transform-origin: top;
+
+    background-color: $color;
+}
+@mixin cube-back($a, $b, $c, $color) {
+    width: $a;
+    height: $b;
+
+    transform: rotateX(90deg);
+    transform-origin: top;
+
+    background-color: $color;
+}
+@mixin cube-left($a, $b, $c, $color) {
+    width: $c;
+    height: $b;
+
+    transform-origin: left top;
+    transform: rotateY(-90deg) rotateZ(90deg) translateY(-$b); 
+
+    background-color: $color;
+}
+@mixin cube-right($a, $b, $c, $color) {
+    width: $c;
+    height: $b;
+
+    transform-origin: right top;
+    transform: rotateY(90deg) rotateZ(-90deg) translateY(-$b) translateZ($a - $c); //length - width
+
+    background-color: $color;
+}
+@mixin cube-top($a, $b, $c, $color) {
+    width: $a;
+    height: $c;
+
+    transform: translateZ($b);
+
+    background-color: $color;
+}
+@mixin cube-bottom($a, $b, $c, $color) {
+    width: $a;
+    height: $c;
+
+    background-color: $color;
+}
+
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transform-style: preserve-3d;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    background-color: $bg-1;
+    cursor: pointer;
+    font-size: 2em;
+
+    .house {
+        position: relative;
+
+        width: 36rem;
+        height: 24rem;
+        // border: 1px solid red;
+        color: maroon;
+
+        transform: perspective(2000px) rotateX(70deg) rotateZ(15deg) translateZ(-9rem);
+        //         景深 
+
+        .cube {
+            position: absolute;
+        }
+
+        .face {
+            background-color: wheat;
+            position: absolute;
+        }
+
+        // floorMain start
+        .floorMain {
+            width: 30rem;
+            height: 24rem;
+            border: 1px solid blue;
+
+            // 调用创建立方体函数
+            @include cube(30rem, .4rem, 24rem, green);
+
+            // Coloring 着色
+            // darken(color, pct)函数用于改变颜色亮度
+            &-front { background-image: linear-gradient(to right, darken($white-3, 10) 40% , darken($white-2, 5) , $white-2); }
+            &-back { background-color: $white-3; }
+            &-right { background-color: $white-1; }
+            &-left { background-color: darken($white-3, 25); }
+            &-top {
+                background-image: linear-gradient(to right, darken($white-3, 10) 40%, darken($white-2, 5) , $white-2 );
+                &::before {
+                    content: '';
+                    position: absolute;
+                    bottom: 0;
+                    width: 13rem;
+                    height: 7rem;
+                    background-image: linear-gradient(-135deg, transparent 20%, rgba( darken($light-2, 5), .75));
+                }
+                &::after {
+                    content: '';
+                    position: absolute;
+                    bottom: 1rem;
+                    left: 6rem;
+
+                    width: 5rem;
+                    height: 5rem;
+                    // background-color: maroon;
+                    border-radius: 50%;
+                    background-image: radial-gradient(rgba($white-1, .25), transparent);
+                    filter: blur(.7rem);
+                }
+            }
+            &-bottom { background-color: $white-3; }
+            // 该立方体构造函数等价于下方代码，构造函数也是从下方朴素样式中抽象出来的
+            /*
+            &-front {
+                // 调用函数
+                @include cube-front(30rem, .4rem, 24rem);
+                
+                width: 30rem;
+                height: .4rem;
+    
+                transform: rotateX(90deg) translateZ(-24rem);
+                transform-origin: top;
+                
+            }
+            &-back {
+                @include cube-back(30rem, .4rem, 24rem);
+                
+                width: 30rem;
+                height: .4rem;
+    
+                transform: rotateX(90deg);
+                transform-origin: top;
+                
+            }
+            &-left {
+                @include cube-left(30rem, .4rem, 24rem);  
+                
+                width: 24rem;
+                height: .4rem;
+
+                transform-origin: left top;
+                transform: rotateY(-90deg) rotateZ(90deg) translateY(-.4rem);     
+                      
+            }
+            &-right {
+                @include cube-right(30rem, .4rem, 24rem);   
+                
+                width: 24rem;
+                height: .4rem;
+
+                transform-origin: right top;
+                transform: rotateY(90deg) rotateZ(-90deg) translateY(-.4rem) translateZ(30rem - 24rem);   
+                       
+            }
+            &-top {
+                @include cube-top(30rem, .4rem, 24rem);
+                
+                width: 30rem;
+                height: 24rem;
+
+                transform: translateZ(.4rem);
+                
+            }
+            &-bottom {
+                @include cube-bottom(30rem, .4rem, 24rem);
+                
+                width: 30rem;
+                height: 24rem;
+                
+            }
+            */
+        }
+        // floorMain end
+
+        // floorRightDown start
+        .floorRightDown {
+            right: 0;
+            bottom: 0;
+
+            width: 6rem;
+            height: 8rem;
+            // border: 1px solid maroon;
+
+            @include cube(6rem, .4rem, 8rem, transparent);
+
+            // coloring
+            &-front { background-color: $white-3; }
+            &-back { background-color: $white-3; }
+            &-right { background-color: $white-1; }
+            &-left { background-color: $white-1; }
+            &-top { background-color: $white-2; }
+            &-bottom { background-color: $white-3; }
+        }
+        // floorRightDown end
+
+        // floorRightUp start
+        .floorRightUp {
+            right: 0;
+            top: 0;
+
+            width: 6rem;
+            height: 4rem;
+            border: 1px solid maroon;
+
+            @include cube(6rem, .4rem, 4rem, blue);
+
+            &-front { background-color: $white-3; }
+            &-back { background-color: $white-3; }
+            &-right { background-color: $white-1; }
+            &-left { background-color: $white-1; }
+            &-top { background-color: $white-2; }
+            &-bottom { background-color: $white-3; }
+        }
+        // floorRightUp end
+
+        // floorGlass start
+        .floorGlass {
+            right: 0;
+            top: 4rem;
+
+            width: 6rem;
+            height: 12rem;
+            border: 1px solid maroon;
+
+            @include cube(6rem, 1rem, 12rem, yellow)
+        }
+        // floorGlass start
+
+    }
+
+}
+

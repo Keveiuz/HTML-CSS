@@ -1,0 +1,347 @@
+@charset "UTF-8";
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transform-style: preserve-3d;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #C6C5E1;
+  cursor: pointer;
+  font-size: 2em;
+}
+body .house {
+  position: relative;
+  width: 36rem;
+  height: 24rem;
+  color: maroon;
+  transform: perspective(2000px) rotateX(70deg) rotateZ(15deg) translateZ(-9rem);
+}
+body .house .cube {
+  position: absolute;
+}
+body .house .face {
+  background-color: wheat;
+  position: absolute;
+}
+body .house .floorMain {
+  width: 30rem;
+  height: 24rem;
+  border: 1px solid blue;
+  /*
+  &-front {
+      // 调用函数
+      @include cube-front(30rem, .4rem, 24rem);
+
+      width: 30rem;
+      height: .4rem;
+
+      transform: rotateX(90deg) translateZ(-24rem);
+      transform-origin: top;
+
+  }
+  &-back {
+      @include cube-back(30rem, .4rem, 24rem);
+
+      width: 30rem;
+      height: .4rem;
+
+      transform: rotateX(90deg);
+      transform-origin: top;
+
+  }
+  &-left {
+      @include cube-left(30rem, .4rem, 24rem);  
+
+      width: 24rem;
+      height: .4rem;
+
+      transform-origin: left top;
+      transform: rotateY(-90deg) rotateZ(90deg) translateY(-.4rem);     
+
+  }
+  &-right {
+      @include cube-right(30rem, .4rem, 24rem);   
+
+      width: 24rem;
+      height: .4rem;
+
+      transform-origin: right top;
+      transform: rotateY(90deg) rotateZ(-90deg) translateY(-.4rem) translateZ(30rem - 24rem);   
+
+  }
+  &-top {
+      @include cube-top(30rem, .4rem, 24rem);
+
+      width: 30rem;
+      height: 24rem;
+
+      transform: translateZ(.4rem);
+
+  }
+  &-bottom {
+      @include cube-bottom(30rem, .4rem, 24rem);
+
+      width: 30rem;
+      height: 24rem;
+
+  }
+  */
+}
+body .house .floorMain-front {
+  width: 30rem;
+  height: 0.4rem;
+  transform: rotateX(90deg) translateZ(-24rem);
+  transform-origin: top;
+  background-color: green;
+}
+body .house .floorMain-back {
+  width: 30rem;
+  height: 0.4rem;
+  transform: rotateX(90deg);
+  transform-origin: top;
+  background-color: green;
+}
+body .house .floorMain-left {
+  width: 24rem;
+  height: 0.4rem;
+  transform-origin: left top;
+  transform: rotateY(-90deg) rotateZ(90deg) translateY(-0.4rem);
+  background-color: green;
+}
+body .house .floorMain-right {
+  width: 24rem;
+  height: 0.4rem;
+  transform-origin: right top;
+  transform: rotateY(90deg) rotateZ(-90deg) translateY(-0.4rem) translateZ(6rem);
+  background-color: green;
+}
+body .house .floorMain-top {
+  width: 30rem;
+  height: 24rem;
+  transform: translateZ(0.4rem);
+  background-color: green;
+}
+body .house .floorMain-bottom {
+  width: 30rem;
+  height: 24rem;
+  background-color: green;
+}
+body .house .floorMain-front {
+  background-image: linear-gradient(to right, #a7a4c2 40%, #e5e5e5, #f2f2f2);
+}
+body .house .floorMain-back {
+  background-color: #c4c2d6;
+}
+body .house .floorMain-right {
+  background-color: #fbfbfb;
+}
+body .house .floorMain-left {
+  background-color: #7a76a3;
+}
+body .house .floorMain-top {
+  background-image: linear-gradient(to right, #a7a4c2 40%, #e5e5e5, #f2f2f2);
+}
+body .house .floorMain-top::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 13rem;
+  height: 7rem;
+  background-image: linear-gradient(-135deg, transparent 20%, rgba(169, 215, 207, 0.75));
+}
+body .house .floorMain-top::after {
+  content: "";
+  position: absolute;
+  bottom: 1rem;
+  left: 6rem;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  background-image: radial-gradient(rgba(251, 251, 251, 0.25), transparent);
+  filter: blur(0.7rem);
+}
+body .house .floorMain-bottom {
+  background-color: #c4c2d6;
+}
+body .house .floorRightDown {
+  right: 0;
+  bottom: 0;
+  width: 6rem;
+  height: 8rem;
+}
+body .house .floorRightDown-front {
+  width: 6rem;
+  height: 0.4rem;
+  transform: rotateX(90deg) translateZ(-8rem);
+  transform-origin: top;
+  background-color: transparent;
+}
+body .house .floorRightDown-back {
+  width: 6rem;
+  height: 0.4rem;
+  transform: rotateX(90deg);
+  transform-origin: top;
+  background-color: transparent;
+}
+body .house .floorRightDown-left {
+  width: 8rem;
+  height: 0.4rem;
+  transform-origin: left top;
+  transform: rotateY(-90deg) rotateZ(90deg) translateY(-0.4rem);
+  background-color: transparent;
+}
+body .house .floorRightDown-right {
+  width: 8rem;
+  height: 0.4rem;
+  transform-origin: right top;
+  transform: rotateY(90deg) rotateZ(-90deg) translateY(-0.4rem) translateZ(-2rem);
+  background-color: transparent;
+}
+body .house .floorRightDown-top {
+  width: 6rem;
+  height: 8rem;
+  transform: translateZ(0.4rem);
+  background-color: transparent;
+}
+body .house .floorRightDown-bottom {
+  width: 6rem;
+  height: 8rem;
+  background-color: transparent;
+}
+body .house .floorRightDown-front {
+  background-color: #c4c2d6;
+}
+body .house .floorRightDown-back {
+  background-color: #c4c2d6;
+}
+body .house .floorRightDown-right {
+  background-color: #fbfbfb;
+}
+body .house .floorRightDown-left {
+  background-color: #fbfbfb;
+}
+body .house .floorRightDown-top {
+  background-color: #f2f2f2;
+}
+body .house .floorRightDown-bottom {
+  background-color: #c4c2d6;
+}
+body .house .floorRightUp {
+  right: 0;
+  top: 0;
+  width: 6rem;
+  height: 4rem;
+  border: 1px solid maroon;
+}
+body .house .floorRightUp-front {
+  width: 6rem;
+  height: 0.4rem;
+  transform: rotateX(90deg) translateZ(-4rem);
+  transform-origin: top;
+  background-color: blue;
+}
+body .house .floorRightUp-back {
+  width: 6rem;
+  height: 0.4rem;
+  transform: rotateX(90deg);
+  transform-origin: top;
+  background-color: blue;
+}
+body .house .floorRightUp-left {
+  width: 4rem;
+  height: 0.4rem;
+  transform-origin: left top;
+  transform: rotateY(-90deg) rotateZ(90deg) translateY(-0.4rem);
+  background-color: blue;
+}
+body .house .floorRightUp-right {
+  width: 4rem;
+  height: 0.4rem;
+  transform-origin: right top;
+  transform: rotateY(90deg) rotateZ(-90deg) translateY(-0.4rem) translateZ(2rem);
+  background-color: blue;
+}
+body .house .floorRightUp-top {
+  width: 6rem;
+  height: 4rem;
+  transform: translateZ(0.4rem);
+  background-color: blue;
+}
+body .house .floorRightUp-bottom {
+  width: 6rem;
+  height: 4rem;
+  background-color: blue;
+}
+body .house .floorRightUp-front {
+  background-color: #c4c2d6;
+}
+body .house .floorRightUp-back {
+  background-color: #c4c2d6;
+}
+body .house .floorRightUp-right {
+  background-color: #fbfbfb;
+}
+body .house .floorRightUp-left {
+  background-color: #fbfbfb;
+}
+body .house .floorRightUp-top {
+  background-color: #f2f2f2;
+}
+body .house .floorRightUp-bottom {
+  background-color: #c4c2d6;
+}
+body .house .floorGlass {
+  right: 0;
+  top: 4rem;
+  width: 6rem;
+  height: 12rem;
+  border: 1px solid maroon;
+}
+body .house .floorGlass-front {
+  width: 6rem;
+  height: 1rem;
+  transform: rotateX(90deg) translateZ(-12rem);
+  transform-origin: top;
+  background-color: yellow;
+}
+body .house .floorGlass-back {
+  width: 6rem;
+  height: 1rem;
+  transform: rotateX(90deg);
+  transform-origin: top;
+  background-color: yellow;
+}
+body .house .floorGlass-left {
+  width: 12rem;
+  height: 1rem;
+  transform-origin: left top;
+  transform: rotateY(-90deg) rotateZ(90deg) translateY(-1rem);
+  background-color: yellow;
+}
+body .house .floorGlass-right {
+  width: 12rem;
+  height: 1rem;
+  transform-origin: right top;
+  transform: rotateY(90deg) rotateZ(-90deg) translateY(-1rem) translateZ(-6rem);
+  background-color: yellow;
+}
+body .house .floorGlass-top {
+  width: 6rem;
+  height: 12rem;
+  transform: translateZ(1rem);
+  background-color: yellow;
+}
+body .house .floorGlass-bottom {
+  width: 6rem;
+  height: 12rem;
+  background-color: yellow;
+}
