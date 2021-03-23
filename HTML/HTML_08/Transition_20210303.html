@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./favion/Logo_White.ico" type="image/x-icon">
+    <title>Transition</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: hsl(160, 100%, 80%);
+        }
+
+        /****************** box-shadow *********************/
+        .box-shadow {
+            width: 300px;
+            height: 400px;
+            margin: 0 auto;
+            margin-top: 130px;
+
+            background-color: hsl(160, 46%, 42%);
+            transition: box-shadow .3s cubic-bezier(0.26, -0.01, 0.34, 0.84) .2s ;
+            /* transition: trans-attribute duration cubic-bezier delay */
+            /* transition:
+                trans-attribute: 需要过渡的属性（与:hover中变化的属性一致）
+                duration: 过渡持续的时间，单位s/ms
+                cubic-bezier: 运动曲线，过渡时中间某一状态到另一状态变化的快慢
+                delay: 延迟一段时间触发过渡动画，单位s/ms
+                !!: 多个属性都有过渡效果，每个效果之间用 "," 隔开，或者将trans-attribute直接写为 all
+            */
+        }
+        .box-shadow:hover {
+            box-shadow: 20px 20px 3px 0px #ffde97;
+            /* box-shadow: h-shadow v-shadow blur spread color inset */
+            /* box-shadow: 
+                原理: 该属性会复制一个和原来盒子大小相同的盒子，置于原盒子下方
+                h-shadow: 将阴影在水平方向移动，向右为正，向左为负
+                v-shadow: 将阴影在垂直方向移动，向下为正，向上为负
+                blur: 将盒子以边缘为界，左右模糊，单位px
+                spread: 将阴影等比例放大或缩小
+                color: 阴影颜色
+            */
+        }
+
+
+        /********************** bar ***********************/
+        .bar {
+            margin: 50px auto;
+            height: 10px;
+            width: 300px;
+            border: 2px solid hsl(160, 46%, 42%);
+            border-radius: 5px;
+        }
+
+        .bar_in {
+            width: 0%;
+            height: 100%;
+            border: 2px solid hsl(160, 46%, 42%);
+            border-radius: 5px;
+            background: hsl(160, 46%, 42%);
+
+            transition: width 1.7s cubic-bezier(0.76, 0.76, 0.29, 1) .3s;
+        }
+        .bar:hover .bar_in {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="box-shadow"></div>
+
+    <!-- 进度条 -->
+    <div class="bar">
+        <div class="bar_in"></div>
+    </div>
+</body>
+</html>
